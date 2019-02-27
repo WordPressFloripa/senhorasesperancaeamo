@@ -12,22 +12,50 @@
 
 /*
 
-1 - Página Inicial
-2 - Outra Pagina...
-3 - Etc...
+TEMPLATES 
+
+1 - Logo
+2 - Tipografia
+3 - Página Inicial
+4 - Footer
 
 */
 
 
 
 
-/* PÁGINA INICIAL  */
+/* LOGO  */
 
+#page .site-branding .site-title, #page .site-branding .site-text-logo {
+    color:  rgb(155, 114, 195);
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* TIPOGRAFIA  */
+
+.h2, h2 {
+    color: rgb(155, 114, 195) !important;
+}
+
+
+/* PÁGINA INICIAL  */
 
 .home #sobre {
     text-align: center;
 }
-
+.home #galeria {
+    background-color: rgb(249, 245, 253);
+}
 .home #galeria .service-title {
     display: none;
+}
+
+
+/* FOOTER */
+
+.site-footer .site-info, .site-footer .btt a {
+    background:  rgb(155, 114, 195) !important;
 }
