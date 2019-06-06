@@ -9,37 +9,61 @@
  Text Domain:  senhoras
 */
 
-
 /*
-
-TEMPLATES 
-0 - Hader
-1 - Logo
-2 - Tipografia
-3 - Página Inicial
-4 - Footer
-
+0 - Geral
+1 - Header
+2 - Página Inicial
+3 - Footer
+4 - Botões
+5 - Icones
 */
+
+/* Geral  */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif !important;
     font-size: 13px;
-    letter-spacing: normal
+    letter-spacing: normal !important;
 }
+
+.text-azul {
+    color: #76a8d9;
+}
+
+.bg-white {
+    background: #ffffff;
+}
+
+.section-desc {
+    font-size: 1rem;
+}
+
+h5.section-subtitle {
+    font-weight: 600;
+}
+
+/* Header  */
 
 header#masthead {
     background: rgba(0, 0, 0, 0.65);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.65);
 }
 
-.onepress-menu a {
+header#masthead .onepress-menu a {
     color: #ffffff;
 }
 
-/* PÁGINA INICIAL  */
+header#masthead .onepress-menu .onepress-current-item a, header#masthead .onepress-menu a:hover, header#masthead .onepress-menu  a:focus {
+    color: #76aadb;
+    font-weight: 700;
+    text-decoration: none;
+}
 
-#hero h2 {
+/* Página Inicial  */
+
+.home #hero h2 {
     color: #ffffff;
     font-size: 3.3em;
     font-weight: 700;
@@ -48,37 +72,47 @@ header#masthead {
     font-family: 'Raleway', sans-serif;
 }
 
-#hero h2 span {
+.home #hero h2 span {
     color: #76aadb;
 }
 
-#hero .hcl2-content {
+.home #hero .hcl2-content {
     padding: 0;
 }
 
-.h-on-top.is-transparent #hero .container .hero__content {
-    margin-top: 40px;
+.home #hero .container .hero-content-style2 {
+    margin-top: 40px !important;
 }
 
-#onde-atuamos {
+.home #onde-atuamos {
     background: #c8ddf1;
 }
 
-#onde-atuamos h5.section-subtitle {
+.home #onde-atuamos h5.section-subtitle {
     color: #76a8d9;
     font-weight: 600;
 }
 
-#onde-atuamos h2 {
+.home #onde-atuamos h2 {
     color: #ffffff;
 }
 
-#banner_ajude {
+@media (max-width: 600px) {
+    .home #onde-atuamos .section-title-area {
+        margin-bottom: 10px;
+    }
+
+    .home #onde-atuamos .feature-item-content {
+        margin-top: 40px;
+    }
+}
+
+.home #banner_ajude {
     background: #efc22e;
     padding: 1em 0;
 }
 
-#banner_ajude h3 {
+.home #banner_ajude h3 {
     color: #ffffff;
     text-align: center;
     font-size: 2.7em;
@@ -87,23 +121,29 @@ header#masthead {
     margin-bottom: 0;
 }
 
-#banner_ajude h3 span.descricao {
+.home #banner_ajude h3 span.descricao {
     color: #000000;
     font-size: .5em !important;
     display: block;
     text-transform: initial !important;
 }
 
-#sobre {
+@media (max-width: 600px) {
+    .descricao {
+        margin: 20px 0;
+    }
+}
+
+.home #sobre {
     text-align: center;
 }
 
-#sobre h5.section-subtitle {
+.home #sobre h5.section-subtitle {
     color: #76aadb;
     font-weight: 600;
 }
 
-#sobre .conheca-icons h3 {
+.home #sobre .conheca-icons h3 {
     align-items: center!important;
     justify-content: center!important;
     display: flex;
@@ -114,116 +154,145 @@ header#masthead {
     min-height: 48px
 }
 
-#sobre .conheca-icons p{
+.home #sobre .conheca-icons p{
     font-size: .7em;
     text-align: center;
 }
 
-#queremos-mais h2 {
+@media (max-width: 600px) {
+    .home #sobre .conheca-icons h3 {
+        min-height: 24px
+    }
+
+    .home #sobre .conheca-icons p{
+        font-size: 1em;
+    }
+}
+
+.home #queremos-mais h2 {
     color: #76a8d9;
 }
 
-#queremos-mais h5.section-subtitle {
+.home #queremos-mais h5.section-subtitle {
     color: #000000;
     font-weight: 600;
 }
 
-#queremos-mais {
+.home #queremos-mais {
     background: url(/wp-content/themes/senhoras/img/sopao-bg-min.png) no-repeat;
     background-size: cover;
 }
 
-#queremos-mais .btn.btn-light {
-    max-width: 340px;
-    margin: 0 auto;
-}
-
-#historia h2 {
+.home #historia h2 {
     color: #efc22e;
 }
 
-#historia h5.section-subtitle {
+.home #historia h5.section-subtitle {
     color: #000000;
     font-weight: 600;
 }
 
-#galeria {
+.home #galeria {
     background-color: #434343;
 }
 
-#galeria h2 {
+.home #galeria h2 {
     color: #ffffff;
 }
 
-#galeria h5.section-subtitle {
+.home #galeria h5.section-subtitle {
     color: #76aadb;
     font-weight: 600;
 }
 
-#noticias h2 {
+.home #noticias h2 {
     color: #efc22e;
 }
 
-#noticias h5.section-subtitle {
+.home #noticias h5.section-subtitle {
     color: #000000;
     font-weight: 600;
 }
 
-#noticias .list-article-meta a {
+.home #noticias .list-article-meta a {
     color: #efc22e;
 }
 
-#contato {
+.home #contato {
     background: #c8ddf1;
 }
 
-#contato h2 {
+.home #contato h2 {
     color: #76a8d9;
 }
 
-#contato h5.section-subtitle {
+.home #contato h5.section-subtitle {
     color: #000000;
-    font-weight: 600;
+    text-transform: uppercase;
 }
 
-#contato .list-article-meta a {
+.home #contato .list-article-meta a {
     color: #efc22e;
 }
 
-#contato h5 {
+.home #contato h5 {
     color: #76a8d9;
     text-transform: initial;
-    font-weight: 600;
 }
 
-#contato input, #contato textarea {
+.home #contato input, #contato textarea {
     border-radius: 15px;
 }
 
-#contato .btn-enviar{
+.home #contato .btn-enviar{
     background: #434343;
 }
 
-.section-desc {
-    font-size: 1rem;
-}
-
-
-/* FOOTER */
+/* Footer */
 
 .site-footer .site-info, .site-footer .btt a {
     background:  #434343;
 }
 
+/* Botões */
 
-
-.text-azul {
-    color: #76a8d9;
-}
-
-.bg-white {
+.btn.btn-light {
     background: #ffffff;
+    color: #76a8d9 !important;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: initial;
+    padding: 10px 20px;
 }
+
+.btn {
+    -webkit-box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
+    -moz-box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
+    box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: 0 12px 20px -6px rgb(43, 43, 43);
+    -moz-box-shadow: 0 12px 20px -6px rgb(43, 43, 43);
+    box-shadow: 0 12px 20px -6px rgb(43, 43, 43);
+}
+
+.btn-redondo {
+    display: flex !important;
+    float: left;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 30px !important;
+    color: #000000 !important;
+    font-size: .8em !important;
+    text-transform: initial;
+    padding: 3px !important;
+    margin-bottom: 20px;
+}
+
+/* Icones */
 
 i.icon-btn-ajuda {
     content: "";
@@ -274,32 +343,4 @@ i.icon-whats {
     float: left;
     margin-right: 5px;
     padding: 5px;
-}
-
-.btn {
-    -webkit-box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
-    -moz-box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
-    box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
-}
-
-.btn.btn-light {
-    background: #ffffff;
-    color: #76a8d9 !important;
-    font-weight: 700;
-    font-size: 1.2em;
-    text-transform: initial;
-    padding: 10px 20px;
-}
-
-.btn-redondo {
-    display: flex !important;
-    float: left;
-    align-items: center;
-    background: #ffffff;
-    border-radius: 30px !important;
-    color: #000000 !important;
-    font-size: .8em !important;
-    text-transform: initial;
-    padding: 3px !important;
-    margin-bottom: 20px;
 }
