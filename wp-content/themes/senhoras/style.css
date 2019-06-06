@@ -13,7 +13,7 @@
 /*
 
 TEMPLATES 
-
+0 - Hader
 1 - Logo
 2 - Tipografia
 3 - Página Inicial
@@ -21,41 +21,285 @@ TEMPLATES
 
 */
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap');
 
-
-
-/* LOGO  */
-
-#page .site-branding .site-title, #page .site-branding .site-text-logo {
-    color:  rgb(155, 114, 195);
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size: 1.2em;
-    font-weight: 800;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+body {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 13px;
+    letter-spacing: normal
 }
 
-/* TIPOGRAFIA  */
-
-.h2, h2 {
-    color: rgb(155, 114, 195) !important;
+header#masthead {
+    background: rgba(0, 0, 0, 0.65);
 }
 
+.onepress-menu a {
+    color: #ffffff;
+}
 
 /* PÁGINA INICIAL  */
 
-.home #sobre {
+#hero h2 {
+    color: #ffffff;
+    font-size: 3.3em;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: inherit;
+    font-family: 'Raleway', sans-serif;
+}
+
+#hero h2 span {
+    color: #76aadb;
+}
+
+#hero .hcl2-content {
+    padding: 0;
+}
+
+.h-on-top.is-transparent #hero .container .hero__content {
+    margin-top: 40px;
+}
+
+#onde-atuamos {
+    background: #c8ddf1;
+}
+
+#onde-atuamos h5.section-subtitle {
+    color: #76a8d9;
+    font-weight: 600;
+}
+
+#onde-atuamos h2 {
+    color: #ffffff;
+}
+
+#banner_ajude {
+    background: #efc22e;
+    padding: 1em 0;
+}
+
+#banner_ajude h3 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#banner_ajude h3 span.descricao {
+    color: #000000;
+    font-size: .5em !important;
+    display: block;
+    text-transform: initial !important;
+}
+
+#sobre {
     text-align: center;
 }
-.home #galeria {
-    background-color: rgb(249, 245, 253);
+
+#sobre h5.section-subtitle {
+    color: #76aadb;
+    font-weight: 600;
 }
-.home #galeria .service-title {
-    display: none;
+
+#sobre .conheca-icons h3 {
+    align-items: center!important;
+    justify-content: center!important;
+    display: flex;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    min-height: 48px
+}
+
+#sobre .conheca-icons p{
+    font-size: .7em;
+    text-align: center;
+}
+
+#queremos-mais h2 {
+    color: #76a8d9;
+}
+
+#queremos-mais h5.section-subtitle {
+    color: #000000;
+    font-weight: 600;
+}
+
+#queremos-mais {
+    background: url(/wp-content/themes/senhoras/img/sopao-bg-min.png) no-repeat;
+    background-size: cover;
+}
+
+#queremos-mais .btn.btn-light {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+#historia h2 {
+    color: #efc22e;
+}
+
+#historia h5.section-subtitle {
+    color: #000000;
+    font-weight: 600;
+}
+
+#galeria {
+    background-color: #434343;
+}
+
+#galeria h2 {
+    color: #ffffff;
+}
+
+#galeria h5.section-subtitle {
+    color: #76aadb;
+    font-weight: 600;
+}
+
+#noticias h2 {
+    color: #efc22e;
+}
+
+#noticias h5.section-subtitle {
+    color: #000000;
+    font-weight: 600;
+}
+
+#noticias .list-article-meta a {
+    color: #efc22e;
+}
+
+#contato {
+    background: #c8ddf1;
+}
+
+#contato h2 {
+    color: #76a8d9;
+}
+
+#contato h5.section-subtitle {
+    color: #000000;
+    font-weight: 600;
+}
+
+#contato .list-article-meta a {
+    color: #efc22e;
+}
+
+#contato h5 {
+    color: #76a8d9;
+    text-transform: initial;
+    font-weight: 600;
+}
+
+#contato input, #contato textarea {
+    border-radius: 15px;
+}
+
+#contato .btn-enviar{
+    background: #434343;
+}
+
+.section-desc {
+    font-size: 1rem;
 }
 
 
 /* FOOTER */
 
 .site-footer .site-info, .site-footer .btt a {
-    background:  rgb(155, 114, 195) !important;
+    background:  #434343;
+}
+
+
+
+.text-azul {
+    color: #76a8d9;
+}
+
+.bg-white {
+    background: #ffffff;
+}
+
+i.icon-btn-ajuda {
+    content: "";
+    background: url(/wp-content/themes/senhoras/img/icon-botao-ajuda-min.png) no-repeat;
+    width: 56px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+i.icon-sopao {
+    content: "";
+    background: url(/wp-content/themes/senhoras/img/icon-sopao-min.png) no-repeat;
+    width: 56px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+i.icon-google {
+    content: "";
+    float: left;
+    background: url(/wp-content/themes/senhoras/img/logo_google_maps.png) no-repeat;
+    width: 33px;
+    height: 33px;
+    float: left;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+i.icon-waze {
+    content: "";
+    float: left;
+    background: url(/wp-content/themes/senhoras/img/logo_waze.png) no-repeat;
+    width: 33px;
+    height: 33px;
+    float: left;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+i.icon-whats {
+    content: "";
+    float: left;
+    background: url(/wp-content/themes/senhoras/img/logo_whatsapp.png) no-repeat;
+    width: 33px;
+    height: 33px;
+    float: left;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.btn {
+    -webkit-box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
+    -moz-box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
+    box-shadow: 0 8px 6px -6px rgb(43, 43, 43);
+}
+
+.btn.btn-light {
+    background: #ffffff;
+    color: #76a8d9 !important;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: initial;
+    padding: 10px 20px;
+}
+
+.btn-redondo {
+    display: flex !important;
+    float: left;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 30px !important;
+    color: #000000 !important;
+    font-size: .8em !important;
+    text-transform: initial;
+    padding: 3px !important;
+    margin-bottom: 20px;
 }

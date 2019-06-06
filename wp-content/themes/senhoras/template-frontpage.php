@@ -1,6 +1,6 @@
 <?php
 /**
- *Template Name: Frontpage2
+ *Template Name: Frontpage
  *
  * @package OnePress
  */
@@ -10,13 +10,13 @@ get_header(); ?>
 	<div id="content" class="site-content">
 		<main id="main" class="site-main" role="main">
             <?php
-            the_content();
+
             do_action( 'onepress_frontpage_before_section_parts' );
 
 			if ( ! has_action( 'onepress_frontpage_section_parts' ) ) {
 
 				$sections = apply_filters( 'onepress_frontpage_sections_order', array(
-                    'features', 'about', 'services', 'videolightbox', 'gallery', 'counter', 'team',  'news', 'contact'
+                    'features', 'banner-ajude', 'about', 'services', 'videolightbox', 'counter', 'team',  'gallery', 'news', 'contact'
                 ) );
 
 				foreach ( $sections as $section ){
@@ -34,8 +34,6 @@ get_header(); ?>
 			} else {
 				do_action( 'onepress_frontpage_section_parts' );
 			}
-
-			
 
             do_action( 'onepress_frontpage_after_section_parts' );
 

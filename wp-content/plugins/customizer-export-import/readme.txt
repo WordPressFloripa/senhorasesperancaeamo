@@ -2,7 +2,7 @@
 Contributors: justinbusa
 Tags: customizer, customizer export, customizer import, export, import, settings, customizer settings, theme settings, theme options
 Requires at least: 3.6
-Tested up to: 4.9.8
+Tested up to: 5.2
 Stable tag: trunk
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -96,3 +96,6 @@ Please visit our blog for more info on the [Customizer Export/Import plugin](htt
 = Version 0.9 =
 
 - Allow options with `widget` or `sidebar` in their key to be exported.
+
+= Version 0.9.1 =
+- Fixed issue with slashes in plugin asset urls and S3. Props Huskynarr.
